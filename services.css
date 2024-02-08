@@ -1,0 +1,247 @@
+.services-section{
+    display: flex;
+    flex-direction: column;
+    background-color:#161616;
+    min-height: 100svh;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+   
+    
+}
+
+.mansalva-regular {
+  font-family: "Mansalva", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.services-div{
+    color: #2d3334;
+ 
+   
+    font-family: Avenir, sans-serif;
+    font-size: 6em;
+    font-weight: 900;
+}
+
+@media only screen and (max-width: 750px) {
+  .services-div{
+    font-size: 3em;
+  }
+  
+  }
+
+.cards-div{
+    display: flex;
+    
+flex-wrap: wrap;
+
+align-items: center;
+justify-content: center;
+   
+    padding-bottom: 20px;
+    border-radius: 70px;
+   row-gap: 0;
+   column-gap: 10em;
+
+    
+}
+
+.underservice-hr{
+    
+    background-color: gold;
+    color: gold;
+    height: 2px;
+    width: 60%;
+    margin-top: 32em;
+  
+}
+.thl-btn-service{
+
+    border: 1px solid rgb(73, 79, 67);
+    border-radius: 40px;
+    color:white;
+    cursor: pointer;
+  background-color: transparent;
+    
+    font-size: 23px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:bold;
+    line-height: 3.5;
+    letter-spacing: 2px;
+    width: 280px;
+    
+   transition:0.5s;
+   
+   
+    
+  }
+  .thl-btn-service:hover{
+    background-color: rgb(135, 126, 75);
+    transition: 0.5s;
+   box-shadow: 0 0 10px rgb(135, 126, 75) , 0 0 30px rgb(135, 126, 75) , 0 0 60px rgb(135, 126, 75);
+    
+  }
+
+
+
+
+  
+
+
+
+
+
+  
+
+.scene {
+  display: inline-block;
+  width: 300px;
+  height: 350px;
+/*   border: 1px solid #CCC; */
+  margin: 40px 0;
+  perspective: 600px;
+  overflow: hidden;
+}
+
+.card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transform-origin: center right;
+  transition: transform 1s;
+}
+
+.card.is-flipped {
+  transform: translateX(-100%) rotateY(-180deg);
+}
+
+.card__face {
+ 
+  
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  line-height: 260px;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+  backface-visibility: hidden;
+
+}
+
+
+.card__face--back {
+  background: rgb(0, 0, 0);
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+ align-items: center;
+ justify-content: center;
+
+}
+
+.cutt{
+   
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 1px;
+}
+.service{
+    font-family: mansalva;
+    position: absolute;
+ z-index: 421412;
+ 
+ text-align: center;
+  font-size: 25px;
+  
+  background-color: rgb(169, 60, 60);
+  
+  width: 100%;
+  line-height: 35px;
+  transition: all 0.2s linear;
+   
+top: -25px;
+    opacity: 0.9;
+    
+    
+}
+
+.serviceinfo{
+    
+    position: absolute;
+ z-index: 421412;
+ 
+ text-align: center;
+  font-size: 18px;
+  
+  
+  
+  width: 50%;
+ height: 40px;
+  transition: all 0.2s linear;
+   text-align: center;
+   line-height: 35px;
+bottom: 0px;
+left: 70px;
+border: 2px solid white;
+   
+    border-radius: 10px;
+    
+}
+
+.serviceinfo:hover{
+  border-color: red;
+}
+.serviceinfo::before{
+    content: 'Κόστος: 50$';
+    position: absolute;
+ z-index: 421412;
+ user-select: none;
+ pointer-events: none;
+ text-align: center;
+  font-size: 18px;
+  
+  background-color: rgb(0, 0, 0);
+  
+  width: 70%;
+ height: 30px;
+  transition: all 0.2s linear;
+   text-align: center;
+   line-height: 32px;
+bottom: 280px;
+left: 1em;
+
+    opacity: 0;
+    padding: 8px 12px;
+    border-radius: 20px;
+    
+    
+}
+.card__face--front:hover > .serviceinfo::before{
+   
+    visibility: visible;
+  bottom: 130px;
+    transition: all 0.3s linear;
+    opacity: 1;
+   
+}
+.info-display{
+ 
+  line-height: normal;
+  width:90%;
+  height: 100%;
+  margin-top:80px;
+  text-align: center;
+ 
+  font-weight: normal;
+  font-size: 24px;
+ 
+}
