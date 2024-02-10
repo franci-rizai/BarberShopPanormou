@@ -1,0 +1,71 @@
+
+  .bigwrap{
+   background: linear-gradient(#161616,rgb(95, 63, 68),#161616);
+
+}
+  .wrapper {
+
+
+    background-image: url(images/flower.png);
+    
+    min-height: 100svh;
+    position: relative;
+    width:75%;
+    aspect-ratio: 16/9;
+    margin: auto;
+   
+   
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+   
+    grid-gap: 1vmin;
+    place-items: center;
+    align-items: center;
+    justify-content: center;
+  
+   
+ 
+  }
+ 
+  
+  .wrapper img {
+  border: 5px double silver;
+   margin: 0;
+    max-width: 100%;
+  transition: 0.5s;
+position: relative;
+    opacity: 0.6;
+  }
+
+  .wrapper img:hover{
+    transform: scale(1.2);
+    z-index: 132;
+    transition: 0.5s;
+    opacity: 1;
+   
+  }
+
+
+  
+@media only screen and (max-width: 1250px) {
+
+    .wrapper{
+        width: 50%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+  
+@media only screen and (max-width: 710px) {
+
+    .wrapper{
+        width: 50%;
+        
+        grid-template-columns: 1fr;
+    }
+    .wrapper img:hover{
+        transform: scale(1);
+    }
+}

@@ -1,5 +1,5 @@
 main{
- background-color: #161616;
+ background:linear-gradient(#1a1e24,#161616);
 
 
   display: flex;
@@ -10,6 +10,7 @@ main{
 }
 
 .aboutus-h1{
+ 
    color: #2d3334;
    
    

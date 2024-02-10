@@ -1,12 +1,13 @@
 .services-section{
     display: flex;
     flex-direction: column;
-    background-color:#161616;
+   
     min-height: 100svh;
     justify-content: start;
     align-items: center;
     width: 100%;
     overflow: hidden;
+    background-color: #161616;
    
     
 }
@@ -21,7 +22,7 @@
 .services-div{
     color: #2d3334;
  
-   
+   text-align: center;
     font-family: Avenir, sans-serif;
     font-size: 6em;
     font-weight: 900;
@@ -80,10 +81,9 @@ justify-content: center;
     
   }
   .thl-btn-service:hover{
-    background-color: rgb(135, 126, 75);
-    transition: 0.5s;
-   box-shadow: 0 0 10px rgb(135, 126, 75) , 0 0 30px rgb(135, 126, 75) , 0 0 60px rgb(135, 126, 75);
     
+    transition: 0.5s;
+    background-color: red;
   }
 
 
@@ -100,11 +100,13 @@ justify-content: center;
 .scene {
   display: inline-block;
   width: 300px;
-  height: 350px;
+
+  aspect-ratio: 2/2.5;
 /*   border: 1px solid #CCC; */
   margin: 40px 0;
-  perspective: 600px;
+  perspective: 100000px;
   overflow: hidden;
+  
 }
 
 .card {
@@ -117,9 +119,17 @@ justify-content: center;
   transition: transform 1s;
 }
 
-.card.is-flipped {
+.card.is-flipped  {
   transform: translateX(-100%) rotateY(-180deg);
+  
+
 }
+.card.is-flipped .card__face > .serviceinfo{
+  display: none;
+}
+
+
+
 
 .card__face {
  
@@ -138,8 +148,9 @@ justify-content: center;
 
 
 .card__face--back {
-  background: rgb(0, 0, 0);
+  background: rgb(171, 163, 163);
   transform: rotateY(180deg);
+ 
   display: flex;
   flex-direction: column;
  align-items: center;
@@ -151,8 +162,18 @@ justify-content: center;
    
     width: 100%;
     height: 100%;
+  
     object-fit: cover;
     object-position: 1px;
+}
+.cutt-back{
+  
+   position: absolute;
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: 1px;
 }
 .service{
     font-family: mansalva;
@@ -161,8 +182,8 @@ justify-content: center;
  
  text-align: center;
   font-size: 25px;
-  
-  background-color: rgb(169, 60, 60);
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
   
   width: 100%;
   line-height: 35px;
@@ -174,7 +195,7 @@ top: -25px;
     
 }
 
-.serviceinfo{
+.serviceinfo,.serviceinfob{
     
     position: absolute;
  z-index: 421412;
@@ -191,57 +212,31 @@ top: -25px;
    line-height: 35px;
 bottom: 0px;
 left: 70px;
-border: 2px solid white;
-   
+border: 2px solid rgb(0, 0, 0);
+   background-color: black;
     border-radius: 10px;
+    color: rgb(255, 214, 214);
     
 }
 
-.serviceinfo:hover{
+
+.serviceinfo:hover,.serviceinfob:hover{
   border-color: red;
+  
 }
-.serviceinfo::before{
-    content: 'Κόστος: 50$';
-    position: absolute;
- z-index: 421412;
- user-select: none;
- pointer-events: none;
- text-align: center;
-  font-size: 18px;
-  
-  background-color: rgb(0, 0, 0);
-  
-  width: 70%;
- height: 30px;
-  transition: all 0.2s linear;
-   text-align: center;
-   line-height: 32px;
-bottom: 280px;
-left: 1em;
 
-    opacity: 0;
-    padding: 8px 12px;
-    border-radius: 20px;
-    
-    
-}
-.card__face--front:hover > .serviceinfo::before{
-   
-    visibility: visible;
-  bottom: 130px;
-    transition: all 0.3s linear;
-    opacity: 1;
-   
-}
+
 .info-display{
- 
+ z-index: 412421;
   line-height: normal;
   width:90%;
   height: 100%;
   margin-top:80px;
   text-align: center;
- 
-  font-weight: normal;
+ box-shadow: 0px 0px 50px ;
+ border-radius: 20px;
+ text-shadow: 3px 3px 3px rgb(0, 0, 0);
+  font-weight: bold;
   font-size: 24px;
  
 }

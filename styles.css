@@ -27,7 +27,7 @@ body{
   display: flex;
   flex-direction: column;
   
-padding-bottom: 60em;
+padding-bottom: 200em;
   background-color: #161616;
   margin:0px;
  
@@ -42,9 +42,10 @@ padding-bottom: 60em;
   justify-content: start;
   height: 100vh;
   position: relative;
-  overflow:hidden;
-  background-image: url(images/backg.jpeg);
- 
+  overflow: hidden;
+  background: url('images/backg.jpeg');
+  background-blend-mode: multiply;
+
 }
 
 
