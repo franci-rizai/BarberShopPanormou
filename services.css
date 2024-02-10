@@ -123,6 +123,7 @@ justify-content: center;
 .card.is-flipped  {
   transform: translateX(-100%) rotateY(-180deg);
   -webkit-transform:translateX(-100%) rotateY(-180deg); 
+  -ms-transform:translateX(-100%)  rotateY(-180deg);
 
 }
 .card.is-flipped .card__face > .serviceinfo{
@@ -151,6 +152,9 @@ justify-content: center;
 .card__face--back {
   background: rgb(171, 163, 163);
   transform: rotateY(180deg);
+  -webkit-transform:rotateY(-180deg); 
+  -ms-transform: rotateY(-180deg);
+
  
   display: flex;
   flex-direction: column;
