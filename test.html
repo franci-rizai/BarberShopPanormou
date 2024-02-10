@@ -1,31 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 
+
+  <style>
+    .container{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: start;
+      height: 50vh;
+      background-color: rgb(200, 184, 153);
+      width: 400px;
+      height: 100px;
+      border-bottom-left-radius: 100px;
+      border-top-right-radius: 100px;
+      transition: 0.7s;
+     
+      background-image: url(images/cutting.avif);
+      background-blend-mode: multiply;
     
+    }
+    .container p{
+      visibility: hidden;
+      font-size: 1.5em;
+      text-align: center;
+     
+      font-weight: bold;
+      color: white;
+    }
+    .container:hover{
+      
+      height: 300px;
+      transition:all 0.7s;
+    }
+    .container:hover > p{
+    
+        visibility: visible;
+    }
+    
+  </style>
+
 </head>
 <body>
-    <div class = "gallery">
-        <div class="clipped-border">
-          <img src="https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.gettyimages.com.au%2Fgi-resources%2Fimages%2Ffrontdoor%2Fcreative%2FPanoramicImagesRM%2FFD_image.jpg&f=1" id="clipped">
-        </div>
-        <div class="clipped-border">
-          <img src="https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fbpucette.b.p.pic.centerblog.net%2Ffv86ll9r.jpg&f=1" id="clipped">
-        </div>
-        <div class="clipped-border">
-          <img src="https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fimagejournal.org%2Fwp-content%2Fuploads%2Fbb-plugin%2Fcache%2F23466317216_b99485ba14_o-panorama.jpg&f=1" id="clipped">
-        </div>
-          <div class="clipped-border">
-          <img src="https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.lokeshdhakar.com%2Fprojects%2Flightbox2%2Fimages%2Fimage-4.jpg&f=1" id="clipped">
-        </div>
-          <div class="clipped-border">
-          <img src="https://images.pexels.com/photos/932638/pexels-photo-932638.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" id="clipped">
-        </div>
-        <div class = "shadow"></div>
-      </div>
-      
+  
+  <div class="container">
+
+    <h1>HAIRCUT</h1> 
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.</p> 
+  </div>
 </body>
+
+
+
 </html>
