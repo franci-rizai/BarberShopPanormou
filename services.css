@@ -19,6 +19,7 @@
 }
 
 
+
 .services-div{
     color: #2d3334;
  
@@ -121,7 +122,7 @@ justify-content: center;
 
 .card.is-flipped  {
   transform: translateX(-100%) rotateY(-180deg);
-  
+  -webkit-transform:translateX(-100%) rotateY(-180deg); 
 
 }
 .card.is-flipped .card__face > .serviceinfo{
