@@ -1,6 +1,9 @@
 
   .bigwrap{
    background: linear-gradient(#161616,rgb(95, 63, 68),#161616);
+ 
+    min-height: 100svh;
+   
 
 }
   .wrapper {
@@ -8,7 +11,6 @@
 
     background-image: url(images/flower.png);
     
-    min-height: 100svh;
     position: relative;
     width:75%;
     aspect-ratio: 16/9;

@@ -45,18 +45,19 @@
   color: white;
   cursor: pointer;
   background-color: transparent;
-  font-size: 23px;
+  font-size: 20px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-weight: bold;
   line-height: 3.5;
   letter-spacing: 2px;
   width: 280px;
   transition: 0.5s;
+  
 }
 
 .thl-btn-service:hover {
   transition: 0.5s;
-  background-color: red;
+  background-color: rgb(240, 86, 86);
 }
 
 .cards {
