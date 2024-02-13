@@ -1,173 +1,212 @@
 footer{
+ 
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     justify-content: space-between;
     width: 100%;
-    
+    min-height: 50svh;
     background-color:#1a1a1a;;
     
-    flex-shrink: 0;
-  
-    
-  
-    
+   
     overflow: hidden;
+    padding-bottom: 15px;
     
 
 }
-footer>:first-child{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    width: 95%;
-    height: 400px
+
+.top-sec-footer{
+   
+    margin-top: 1em;
+    width: 100%;
+display: flex;
+align-items: start;
+justify-content: space-around;
 }
-.about-us-div > :first-child{
+.top-sec-footer .loc-div{
+   display: flex;
+   flex-direction: column;
+  
+  
+   gap: 1em;
+   align-items: center;
+
+   justify-content: center;
+    color: white;
     font-weight: bold;
-    color: rgb(211, 208, 208);
-}
-.about-us-div{
-    width: 500px;
-    text-align: center;
-    color: rgb(136, 132, 132);
+   text-align: center;
+   line-height: 0.2;
 }
 
-
-.follow-us>:first-child{
-    font-size: 25px;
-    color: rgb(213, 204, 204);
-    font-style: italic;
-}
-.follow-us{
-    font-size: 25px;
-    color: rgb(213, 204, 204);
-}
-
-#fb{
-    border:2px solid rgb(0, 0, 0);
-    box-shadow: 0.5px 0.5px 5px 0.5px;
-    border-radius: 30px;
-    padding:6px;
-}
-#insta {
-    border:2px solid black;
-    box-shadow: 0.5px 0.5px 5px 0.5px;
-    border-radius: 20px;
-    padding: 6px;
-
-}
-#tiktok{
-    border:2px solid black;
-    box-shadow: 0.5px 0.5px 5px 0.5px;
-    border-radius: 20px;
-    padding: 6px;
-    padding-right: 7px;
-    padding-left: 7px;
-}
-.fa-brands{
-    cursor: pointer;
-    transition: 0.5s;
-}
-.fa-brands:hover{
-    color: rgb(235, 71, 71);
+.top-sec-footer .text{
+   
+   width: fit-content;
+  
+   
+   
     
-    transition: 0.5s;
+    
+}
+
+.hr-div{
+   
+    width: 80%;
+  
+}
+
+.text p:first-child{
+    color: #ff5e14
+}
+
+.bot-sec-footer{
+ flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    color: white;
+    
+   
+   
+  
    
 }
 
-.quest-div{
-    margin-right: 50px;
+.left-sec-footer p{
+    width: 25em;
+    color:#7e7e7e;
+}
+
+.left-sec-footer{
+   
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  
+}
+
+.fa-tiktok {
+    color: black;
+   font-size: 2em;
+   border: 2px solid white ;
+   padding: 5px 7px;
+   border-radius: 50%;
+   background-color: white;
+
    
 }
-.quest-div>:first-child{
-    
-    font-size: 20px;
-    font-weight: bold;
-    
-}
-input{
-    font-size: 20px;
-    width: 100%;
-    height: 40px;
+.fa-facebook-f {
     color: white;
+   font-size: 2em;
+   border: 2px solid blue ;
+   padding: 5px 10px;
+   border-radius: 50%;
+   background-color: blue;
    
-    border: 2px solid black;
-    border-radius: 10px;
-    outline: none;
-    background-color: transparent;
 }
-::placeholder{
-    color: rgb(152, 147, 147);
-    font-weight: normal;
-}
-.submit{
-    width: 50%;
-   margin-right: 140px;
-   color: rgb(213, 210, 205);
-    background-color: rgb(235, 71, 71);
-    cursor: pointer;
+.fa-instagram {
+    color: rgb(255, 0, 0);
+   font-size: 2em;
+   border: 2px solid rgb(255, 255, 255) ;
+   padding: 5px 7px;
+   border-radius: 50%;
+   background-color: rgb(255, 255, 255);
+   
 }
 
-.hrdiv{
+.mid-sec-footer ul{
+    list-style-type: none;
+    color:#7e7e7e;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: -10px;
+   
+    
+}
+.mid-sec-footer li{
+    margin-top: 2.8em;
+    font-weight: bold;
+
+}
+
+.mid-sec-footer{
+  
+   
+    display: flex;
+    height:303.1px;
+    flex-direction: column;
+    align-items: center;
+    
+  
+}
+.help{
+    height: 301px;
  
-   width:100%;
-    height: 70px;
+}
+
+.inputs input:first-child{
+    width: 50%;
+  padding: 14px 28px;
+  background: #2E2E2E;
+  border: 3px solid #2E2E2E;
+ 
+  color: #fff;
+  outline: none;
+  border-radius: 10px;
+}
+
+
+
+.inputs input:nth-child(2){
+    width: 80%;
+    border-radius: 10px;
+  padding: 14px 0px 55px 14px;
+  background: #2E2E2E;
+  border: 3px solid #2E2E2E;
+  margin-top: 0.2em;
+  color: #fff;
+  border: none;
+  flex-shrink: 0;
+  outline: none;
+}
+.inputs input:nth-child(3){
+    width:50%;
+    height: 40px;
+    font-size: 1.5em;
+    margin-top: 0.3em;
+    background-color:#ff5e14;
+    border: none;
+    border-radius: 10px;
+}
+
+@media only screen and (max-width: 1090px) {
+
+.bot-sec-footer{
+   flex-direction: column; 
+ 
+}
+.inputs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    
+}
+.loc-div{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    line-height: 0.2;
     
 }
 
-.plast{
-color: antiquewhite;
-text-align: center;
+.mid-sec-footer li{
+    margin-top: 1.8em;
 }
-
-.franci{
-    color:  rgb(232, 33, 33);;
+.mid-sec-footer{
+    margin-top: 2em;
 }
-
-
-
-@media only screen and (max-width: 1140px) {
-
-    .about-us-div{
-        display: none;
-    }
-    
-    
-}
-
-@media only screen and (max-width: 600px) {
-
-    
-    .submit{
-        font-size: 15px;
-        
-    }
-    footer>:first-child{
-        display: grid;
-        place-items: center;
-     
-        width: 100%;
-        
-       justify-content: center;
-      
-    }
-    .barber-logo{
-        width: 120px;
-    }
-    .pfollow{
-        display:none ;
-    }
-    
-    
-    
-    
-    
-
-    
 }
