@@ -5,7 +5,7 @@
   justify-content: start;
   align-items: center;
   width: 100%;
-  gap: 10em;
+  gap: 6em;
   overflow: hidden;
   background-color: #161616;
 }
@@ -36,7 +36,7 @@
   color: gold;
   height: 2px;
   width: 60%;
-  margin-top: 32em;
+  
 }
 
 .thl-btn-service {
@@ -157,8 +157,13 @@ bottom: 4px;
 
 
 @media only screen and (max-width: 500px) {
+ 
+ .cards{
+  grid-template-columns: 1fr 1fr;
+ }
   .container{
     width: 330px;
+   
 
   }
 .container .info {
@@ -168,3 +173,22 @@ bottom: 4px;
 
 
 }
+
+@media only screen and (max-width: 1400px) {
+ 
+  .cards{
+   grid-template-columns: 1fr 1fr;
+  
+ 
+ 
+  }}
+
+  
+@media only screen and (max-width: 900px) {
+ 
+  .cards{
+   grid-template-columns: 1fr;
+  
+ 
+ 
+  }}
