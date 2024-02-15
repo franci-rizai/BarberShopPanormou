@@ -11,40 +11,16 @@ html{
 
 
 
-
-
-.topheader h1{
-  font-weight: bold;
-  text-shadow: -4px -1px white;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  filter: brightness(1);
+.barber-video{
+  
+  position: absolute;
   
  
-  font-size: 2.5em;
-  text-align: center;
-  color: #f0a75f;
-  border-radius: 10px;
+  z-index: -1;
+  width: 100%;
+ 
+}
 
-  padding: 10px 30px;
- 
-}
-.topheader{
-  
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
- 
-}
-.topheader span{
-  filter: brightness(1000);
-  text-shadow: none;
-  color: silver;
-  font-size: 0.7em;
-}
-header div{
-  margin-top: 10em;
-}
 
 body{
   
@@ -64,7 +40,6 @@ body{
   display: flex;
   flex-direction: column;
   justify-content: start;
-  align-items: center;
   height: 100vh;
   position: relative;
   overflow: hidden;
@@ -93,7 +68,7 @@ border: none;
 cursor: pointer;
 color: white;
 font-size: 22px;
-
+margin-left: 30px;
 position: relative;
 font-weight: bold;
 font-family: Inconsolata;
@@ -133,12 +108,12 @@ font-family: Inconsolata;
 .div-buttons{
 
   min-width: max-content;
- 
+  margin-top: 50px;
   text-align: center;
 }
 
 .slogan-div{
-margin: auto;
+ margin:auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -188,7 +163,7 @@ background-color: transparent;
 
 }
 .thl-btn-div{
-
+  margin-top:-15px ;
   position: relative;
 }
 
@@ -199,8 +174,8 @@ background-color: transparent;
   
   header{
     flex-direction: column;
-  
-  
+    justify-content: center;
+    align-items: center;
   }
   .div-buttons{
     display: flex;
@@ -208,20 +183,12 @@ background-color: transparent;
   justify-content: center;
   align-items: center;
   gap: 1em;
- 
- 
+  margin-right: 30px;
   }
   
   
   
 }
-
-
-
-
-
-
-
 
 
 
