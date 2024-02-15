@@ -69,6 +69,7 @@ cursor: pointer;
 color: white;
 font-size: 22px;
 margin-left: 30px;
+position: relative;
 font-weight: bold;
 font-family: Inconsolata;
 
@@ -77,23 +78,32 @@ font-family: Inconsolata;
   color: white;
   transition: 0.5s;
 }
-.butt-a:hover{
-  color: rgb(235, 71, 71);
-  transition: 0.5s;
-}
 
 }
-
-
-
-.about-btn{
-  color:rgb(210, 40, 134);
+.service-btn::after,.contact-btn::after,.service-btn::after,.about-btn::after{
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  
+  bottom: -5px;
+  left: 7px;
+  background-color: white;
+  transition: 0.4s;
 }
-.service-btn:hover,.about-btn:hover,.contact-btn:hover{
- color:rgb(235, 71, 71);
-  transition: 0.5s;;
-
+.service-btn:hover::after,.contact-btn:hover::after,.about-btn:hover::after{
+  width: 89%;
+  transition: 0.4s;
 }
+.contact-btn:hover::after{
+  width: 95%;
+  transition: 0.4s;
+}
+
+
+
+
+
 
 .div-buttons{
 
