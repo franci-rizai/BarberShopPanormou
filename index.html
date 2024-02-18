@@ -26,31 +26,54 @@
 </head>
 
 <body>
+ 
  <section id="sec1" class="section_1">
-
+<img src="/images/backp.webp" class="backp">
  <div class="topheader">
+  <div>
+  <h1>Malvin <br><span> Hair And Beauty</span> </h1>
+</div>
+   
     <header class="div-buttons" data-aos="slide-down" data-aos-duration="1000">
      
-     
-        <button class="service-btn"><a class="butt-a" href="#services">Υπηρεσίες</a></button>
-        <button class="contact-btn"><a class="butt-a" href="#contact-us">Πληροφορίες & Τοποθεσία</a></button>
-        <button class="about-btn"><a class="butt-a" href="#footer">Βοήθεια</a></button>
-        <button class="about-btn"><a class="butt-a" href="#main">Σχετικά</a></button>
+      <button class="service-btn"><a class="butt-a" href="#services">Υπηρεσίες</a></button>
+      <button class="contact-btn"><a class="butt-a" href="#contact-us">Πληροφορίες & Τοποθεσία</a></button>
+      <button class="service-btn"><a class="butt-a" href="#gallery">Φωτογραφίες</a></button>
+
+ 
+      <button class="about-btn"><a class="butt-a" href="#main">Σχετικά</a></button>
+      <button class="about-btn"><a class="butt-a" href="#footer">Βοήθεια</a></button>
 
 
     
     </header>
+    <div class="bars" id="toggleMobileMenu">
+      <div>
+      <i class="fa-solid fa-bars" style="color:white;"></i>
+    </div>
+      <div class="mobile" id="mobile" style="color: black;">
+        <button class="service-btn" ><a class="butt-a" href="#services">Υπηρεσίες</a></button>
+        <button class="contact-btn"><a class="butt-a" href="#contact-us">Πληροφορίες & Τοποθεσία</a></button>
+        <button class="service-btn"><a class="butt-a" href="#gallery">Φωτογραφίες</a></button>
+
+   
+        <button class="about-btn"><a class="butt-a" href="#main">Σχετικά</a></button>
+        <button class="about-btn"><a class="butt-a" href="#footer">Βοήθεια</a></button>
+
+      </div>
+    </div>
   </div>
     <div class="slogan-div">
       <div class="text-div">
         <h1 data-aos-delay="600" data-aos="fade-right" data-aos-duration="1500">
-          δεν κόβουμε απλώς μαλλιά, Στάζουμε στυλ</h1>
+          Δεν κόβουμε απλώς μαλλιά, στάζουμε στυλ</h1>
         <h3 data-aos="fade-left" data-aos-delay="600" data-aos-duration="1500">Ξεχωρίστε με κάθε χτύπημα ψαλιδιού!</h3>
       </div>
       <div class="thl-btn-div" data-aos="fade-up" data-aos-delay="1200" data-aos-duration="1500">
-       <a href="appointment.html"> <Button class="thl-btn">Κλείσε το ραντεβού σου <br></Button> </a>
+       <a href="appointment.html"> <Button class="thl-btn">Κλείστε εδώ ραντεβού </Button> </a>
 
       </div>
+      
     </div>
   </section>
   <main id="main">
@@ -174,7 +197,7 @@
 
  
  
-  <div class="bigwrap">
+  <div class="bigwrap" id="gallery">
     <h1 class="services-div"">Η Τέχνη μας</h1>
   <div class="wrapper">
    
@@ -274,7 +297,7 @@
     
    
   </footer>
-
+ 
   <script src="cards.js">
  id="img"
   </script>
@@ -287,7 +310,17 @@
 
     });
   </script>
+  <script>
+    // Get the button and mobile menu elements
+    const toggleButton = document.getElementById('toggleMobileMenu');
+    const mobileMenu = document.getElementById('mobile');
 
+    // Add a click event listener to the button
+    toggleButton.addEventListener('click', function() {
+        // Toggle the 'open' class on the mobile menu
+        mobileMenu.classList.toggle('open');
+    });
+</script>
 
 </body>
 
