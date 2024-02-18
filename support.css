@@ -73,7 +73,7 @@ justify-content: space-around;
    
 }
 
-.topheader h1{
+.left-sec-footer h1{
   
   
     font-weight: bold;
@@ -90,6 +90,12 @@ justify-content: space-around;
     padding: 10px 10px;
   
    
+  }
+  .left-sec-footer span{
+    filter: brightness(1000);
+    text-shadow: none;
+    color: silver;
+    font-size: 0.7em;
   }
 .left-sec-footer p{
     width: 23em;
