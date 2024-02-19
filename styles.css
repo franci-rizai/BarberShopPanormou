@@ -34,7 +34,9 @@ object-fit: cover;
   
   
   font-weight: bold;
-  text-shadow: -4px -1px white;
+  text-shadow: -1px -1px 2px white;
+  border-right:2px solid #ffffff;
+  border-bottom: 1px solid rgb(255, 255, 255);
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   filter: brightness(1);
   
@@ -85,7 +87,9 @@ object-fit: cover;
  flex-direction: column;
  align-items: center;
  justify-content: center;
- background-color: rgba(0, 0, 0, 0.5);
+ background-color: rgba(0, 0, 0, 0.9);
+ padding-bottom: 10px;
+ padding-top: 10px;
  
  
  transition: 0.5s;
@@ -247,7 +251,17 @@ background-color: transparent;
 }
 
 
-
+.text-last{
+ margin-top: 50px;
+ 
+ color: #ffffff;
+ font-size: 15px;
+ font-weight: 0;
+ font-style: italic;
+ letter-spacing: 2px;
+ text-align: center;
+  
+}
 @media only screen and (max-width: 950px) {
 
   .topheader{
@@ -271,12 +285,16 @@ background-color: transparent;
   
    
   }
+  .thl-btn{
+    height: 50px;
+    font-size: 20px;
+  }
   .topheader h1{
     font-size: 2em;
   }
  
   .text-div{
-    font-size: 20px;
+    font-size: 15px;
   }
   .div-buttons{
     display: none;
