@@ -35,8 +35,7 @@ object-fit: cover;
   
   font-weight: bold;
   text-shadow: -1px -1px 2px white;
-  border-right:2px solid #ffffff;
-  border-bottom: 1px solid rgb(255, 255, 255);
+  
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   filter: brightness(1);
   
@@ -44,7 +43,7 @@ object-fit: cover;
   font-size: 2.2em;
   text-align: center;
   color: #f0a75f;
-  border-radius: 10px;
+  
 
   padding: 10px 10px;
 
@@ -211,31 +210,34 @@ margin: auto;
  
 
 }
-
+ul li{
+  margin-top: 2px;
+}
 .thl-btn{
-border: none;
- 
+
   color:white;
   cursor: pointer;
 background-color: transparent;
   
-  font-size: 26px;
+  font-size: 22px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-weight: 700;
   line-height: 2;
   text-align: center;
   width: fit-content;
-  transition: 0.4s;
+  transition: 0.6s;
   height: 70px;
- 
- background-color: rgb(159, 159, 159,0.5);
+ border:2px solid rgba(234, 170, 107, 0.8);;
+  background-color:rgba(234, 170, 107, 0.6);
  font-family: Inconsolata;
  
   font-weight: normal;
 }
 .thl-btn:hover{
-  background-color: rgb(159, 159, 159,1);
-  transition: 0.4s;
+  background-color:transparent;
+  transition: 0.6s;
+  transform: translateY(-5%);
+
  
   
   

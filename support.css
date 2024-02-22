@@ -17,9 +17,10 @@ footer{
 }
 
 .top-sec-footer{
+    
    
     margin-top: 1em;
-    width: 100%;
+    min-width: 100%;
 display: flex;
 align-items: start;
 justify-content: space-around;
@@ -28,6 +29,8 @@ justify-content: space-around;
    display: flex;
    flex-direction: column;
   
+  
+ 
   
    gap: 1em;
    align-items: center;
@@ -52,8 +55,10 @@ justify-content: space-around;
 .hr-div{
    
     width: 80%;
-  
+ 
+ 
 }
+
 
 .text p:first-child{
     color: #ff5e14
@@ -78,8 +83,7 @@ justify-content: space-around;
   
     font-weight: bold;
     text-shadow: -1px -1px 2px white;
-    border-right:6px solid #171616;
-    border-bottom: 6px solid rgb(0, 0, 0);
+    
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     filter: brightness(1);
     
@@ -93,7 +97,7 @@ justify-content: space-around;
   
    
   }
-  .left-sec-footer span{
+  .left-sec-footer .hairbeauty{
     filter: brightness(1000);
     text-shadow: none;
     color: silver;
@@ -102,10 +106,13 @@ justify-content: space-around;
 .left-sec-footer p{
     width: 23em;
     color:#7e7e7e;
+    text-align: center;
 }
 
 .left-sec-footer{
-   
+   background-color: rgb(238, 232, 232,0.1);
+   padding-bottom: 10px;
+   border-radius: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
