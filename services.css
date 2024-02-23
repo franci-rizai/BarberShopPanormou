@@ -165,7 +165,7 @@ row-gap: 7em;
  
 }
 a{
-  margin:auto; margin-top:8em;
+  text-decoration: none;
 }
 
 @media only screen and (max-width: 1090px) {
