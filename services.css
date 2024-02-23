@@ -20,50 +20,10 @@
   color: white;
 place-items: center;
 text-align: center;
-row-gap: 9em;
+row-gap: 7em;
 
 
 }
-.show{
-  margin-top:-15px;
-  color:white;
-  cursor: pointer;
-
-  
-  font-size: 20px;
- 
- 
-  height: 35px;
-overflow: hidden;
-  transition: 0.6s;
- 
- border:2px solid rgba(234, 170, 107, 0.8);;
-  background-color:rgba(234, 170, 107, 0.6);
- font-family: Inconsolata;
-padding: 7px 20px;
-  font-weight: normal;
-  
-}
-.show1:hover{
-  height: 280px;
-}
-.show2:hover{
-  height: 140px;
-}
-
-.show3:hover{
-  height: 210px;
-}
-
-.show4:hover{
-  height: 175px;
-}
-.show5:hover{
-  height: 70px;
-  
-}
-
-
 
 
 .services-section h1{
@@ -113,6 +73,7 @@ padding: 7px 20px;
 
 
 .image p{
+  
   pointer-events: none;
   user-select: none;
   position: absolute;
@@ -120,11 +81,12 @@ padding: 7px 20px;
   margin: auto;
   z-index: 2;
   letter-spacing: 3px;
-  font-size: 2em;
+  
+  font-size: 2.3em;
   font-weight: bold;
-  color: gold;
+  color: rgb(230, 198, 21);
   filter: brightness(3);
-  opacity: 0.8;
+  
 }
 .container {
   margin-top: 15em;
@@ -202,7 +164,9 @@ padding: 7px 20px;
  
  
 }
-
+a{
+  margin:auto; margin-top:8em;
+}
 
 @media only screen and (max-width: 1090px) {
 
