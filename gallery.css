@@ -34,6 +34,8 @@
   border: 5px double silver;
    margin: 0;
     max-width: 100%;
+    aspect-ratio: 16/16;
+    object-fit: cover;
   transition: 0.5s;
 position: relative;
     opacity: 0.6;
@@ -47,8 +49,12 @@ position: relative;
    
   }
 
-
+a{
+  color: white;
+  text-decoration: underline;
   
+}
+ 
 @media only screen and (max-width: 1250px) {
 
     .wrapper{
