@@ -113,6 +113,8 @@ padding: 7px 20px;
 
 
 .image p{
+  pointer-events: none;
+  user-select: none;
   position: absolute;
   inset: 0;
   margin: auto;
