@@ -83,28 +83,41 @@ justify-content: space-around;
   
   
     font-weight: bold;
-    text-shadow: -1px -1px 2px white;
+    font-family: font;
+    filter: brightness(10);
     
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    filter: brightness(1);
-    
-   
+   /* text-shadow: -1px -1px 5px white; */
+    animation: shine 1.4s ease-in-out  infinite;
+   line-height: 1;
     font-size: 2.2em;
     text-align: center;
-    color: #f0a75f;
+    color: #4f500f;
     border-radius: 10px;
   
     padding: 10px 10px;
   
    
   }
+  @keyframes shine {
+    0%,100%{
+        text-shadow: -1px -1px 5px white;
+    }
+    50%{
+        text-shadow: -1px -1px 10px white;
+    
+    }
+    
+  }
   .left-sec-footer .hairbeauty{
-    filter: brightness(1000);
+    filter: brightness(1);
     text-shadow: none;
     color: silver;
-    font-size: 0.7em;
+    font-size: 0.6em;
+    
+    font-family: Arial, Helvetica, sans-serif;
   }
 .left-sec-footer p{
+    
     width: 23em;
     color:#7e7e7e;
     text-align: center;
@@ -121,7 +134,7 @@ justify-content: space-around;
   
 }
 
-.fa-tiktok {
+/* .fa-tiktok {
     color: black;
    font-size: 2em;
    border: 2px solid white ;
@@ -129,8 +142,9 @@ justify-content: space-around;
    border-radius: 50%;
    background-color: white;
 cursor: pointer;
+transition: 0.5s;
    
-}
+} */
 .fa-facebook-f {
     color: white;
    font-size: 2em;
@@ -139,6 +153,7 @@ cursor: pointer;
    border-radius: 50%;
    background-color: blue;
    cursor: pointer;
+   transition: 0.5s;
    
 }
 .fa-instagram {
@@ -149,6 +164,12 @@ cursor: pointer;
    border-radius: 50%;
    background-color: rgb(255, 255, 255);
    cursor: pointer;
+   transition: 0.5s;
+}
+.fa-instagram:hover,.fa-facebook-f:hover{
+    border-radius: 10%;
+    transition: 0.5s;
+    box-shadow: 0px 0px 10px white;
 }
 
 .mid-sec-footer ul{
@@ -260,5 +281,5 @@ cursor: pointer;
 }
 p a{
     text-decoration: none;
-    letter-spacing: 1px;
+    letter-spacing: 0px;
 }

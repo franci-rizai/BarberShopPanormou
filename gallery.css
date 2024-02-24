@@ -38,7 +38,7 @@
     object-fit: cover;
   transition: 0.5s;
 position: relative;
-    opacity: 0.7;
+    opacity: 0.75;
   }
 
   .wrapper img:hover{

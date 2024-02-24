@@ -10,7 +10,7 @@
 
 .services-section{
   background-color: #161616;
- 
+ position: relative;
   display: grid;
   grid-template-columns: repeat(3,1fr);
   grid-template-rows: 300px 400px;
@@ -71,7 +71,6 @@ row-gap: 7em;
 
 
 
-
 .image p{
   
   pointer-events: none;
@@ -93,6 +92,7 @@ row-gap: 7em;
 }
 
 .container .card {
+  
   position: relative;
   max-width : 300px;
   height : 100px;  
