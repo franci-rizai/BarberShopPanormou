@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@100..900&display=swap');
-
+@font-face {
+  font-family:font2;
+  src: url(DelaGothicOne-Regular.ttf);
+}
 .smooch-sans-hi {
   font-family: "Smooch Sans", sans-serif;
   font-optical-sizing: auto;
@@ -72,19 +75,25 @@ row-gap: 7em;
 
 
 .image p{
-  
+  font-family: font2;
   pointer-events: none;
   user-select: none;
   position: absolute;
   inset: 0;
   margin: auto;
   z-index: 2;
+  left: 25px;
   letter-spacing: 3px;
+  background-color: rgb(255, 255, 255,0.8);
+  height: 50px;
+  border-radius:20px ;
   
-  font-size: 2.3em;
+  font-size: 1.8em;
   font-weight: bold;
-  color: rgb(230, 198, 21);
-  filter: brightness(3);
+  color: rgb(151, 137, 56);
+  filter: brightness();
+  font-style: italic;
+ 
   
 }
 .container {
