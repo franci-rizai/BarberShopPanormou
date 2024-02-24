@@ -150,7 +150,6 @@ body{
 
 
 
-
 .service-btn,
 .about-btn,
 .contact-btn{
@@ -276,7 +275,7 @@ background-color: transparent;
 @media only screen and (max-width: 950px) {
 
   .topheader{
-   
+   margin-left: 1em;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
