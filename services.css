@@ -79,34 +79,35 @@ row-gap: 7em;
   pointer-events: none;
   user-select: none;
   position: absolute;
-  inset: 0;
-  margin: auto;
-  z-index: 2;
-  left: 25px;
+ inset: 0;
+ margin: auto;
+  z-index: 51;
+  
   letter-spacing: 3px;
-  background-color: rgb(255, 255, 255,0.8);
+  
   height: 50px;
   border-radius:20px ;
   
   font-size: 1.8em;
   font-weight: bold;
-  color: rgb(151, 137, 56);
+  color: rgb(255, 255, 255);
   filter: brightness();
   font-style: italic;
- 
+  transition: 0.2s;
   
 }
+
 .container {
   margin-top: 15em;
 }
 
 .container .card {
-  
+
   position: relative;
   max-width : 300px;
   height : 100px;  
   background-color : #fff;
-  margin : 30px 10px;
+  margin : 55px 10px;
   padding : 20px 15px;
   
   display : flex;
@@ -116,33 +117,39 @@ row-gap: 7em;
   border-radius : 15px;
 }
 .container .card:hover {
-  height : 320px;    
+  height : 320px;   ;
 }
 
 
 .container .card .image {
+ 
+ transition: 0.2s;
   position : relative;
   width : 260px;
   height : 260px;
   aspect-ratio: 1/1;
-  top : -40%;
-  left: 8px;
+  top : -60%;
+ 
   
   z-index : 1;
 }
 
 .container .card .image img {
+  filter: blur(2px);
+  filter: brightness(0.4);
+ position: relative;
   max-width : 100%;
   border-radius : 15px;
-  position: relative;
+aspect-ratio: 1.1;
   transition: padding 0.3s;
   padding: 0px;
- 
+ overflow: hidden;
+ transition: 0.2s;
   
 }
 
 .container .card .content {
-  
+  transition: 0.2s;
   position : relative;
   top : -235px;
   padding : 10px 15px;
@@ -170,9 +177,20 @@ row-gap: 7em;
   border: 2px solid pink;
   padding: 15px;
   transition: padding 0.3s;
+
+  filter: blur(0px);
+  filter: brightness(1);
+ transition: 0.2s;
+ 
+}
+.container .card:hover .image {
+top: -70%;
+transition: 0.2s;
  
  
 }
+
+
 a{
   text-decoration: none;
 }
