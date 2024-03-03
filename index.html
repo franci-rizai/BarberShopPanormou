@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width">
  
   <title>Malvi Hair&Beauty</title>
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+ 
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="support.css">
   <link rel="stylesheet" href="services.css">
@@ -131,7 +131,7 @@
 
   <div class = card>
     <div class = "image">
-      <img class="im" src = "images/image2.jpg">
+      <img class="im" src = "images/image1t.jpg">
       <p>Χτενίσματα</p>
     </div>
     <div class = content>
@@ -154,9 +154,9 @@
   </div>    
 
 
-<div class = card>
+<div class = "card">
   <div class = "image">
-    <img class="im" src = "images/image9.jpg">
+    <img class="im" src = "images/image2t.jpg">
     <p>Κουρέματα</p>
   </div>
   <div class = content>
@@ -175,7 +175,7 @@
 
 <div class = card>
   <div class = "image">
-    <img class="im" src = "images/image3.jpg">
+    <img class="im" src = "images/image3t.png">
     <p>Χρώμα</p>
   </div>
   <div class = content>
@@ -195,7 +195,7 @@
 
 <div class = card>
   <div class = "image">
-    <img class="im" src = "images/image4.jpg">
+    <img class="im" src = "images/image4t.jpg">
     <p>Θεραπείες</p>
   </div>
   <div class = content>
@@ -213,7 +213,7 @@
 
 <div class = card>
   <div class = "image">
-    <img class="im" src = "images/image5.jpg">
+    <img class="im" src = "images/image5t.jpg">
     <p>Γενικά</p>
   </div>
   <div class = content>
@@ -369,6 +369,15 @@
     
    
   </footer> 
+  <script>
+    const cards = document.querySelectorAll(".card");
+
+cards.forEach(card => {
+  card.addEventListener("click", (event) => {
+    card.classList.toggle("open"); // Toggle on the clicked card specifically
+  });
+});
+  </script>
   <script>
     // Get the button and mobile menu elements
     const toggleButton = document.getElementById('toggleMobileMenu');
