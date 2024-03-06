@@ -75,7 +75,8 @@ row-gap: 15em;
 
 
 .image p{
-  font-family: font2;
+  
+ 
   pointer-events: none;
   user-select: none;
   position: absolute;
@@ -89,14 +90,14 @@ row-gap: 15em;
   
   left: 20px;
 
-  font-size: 1.8em;
+  font-size: 2em;
   font-weight: bold;
   color: rgb(255, 255, 255);
   filter: brightness(1000);
   font-style: italic;
   filter: drop-shadow(0px 0px 0px);
   transition: 0.2s;
-  
+  font-family:fonthair ;
 }
 
 .container {
@@ -104,8 +105,10 @@ row-gap: 15em;
   width: 80%;
  margin-left: auto;
  margin-right: auto;
-  background-color: rgba(255, 235, 205,0.7);
- 
+  background-color: rgba(255, 255, 255, 0.7);
+ border-radius: 10px;
+ font-family: fonthair;
+
 }
 
 .container .card {
