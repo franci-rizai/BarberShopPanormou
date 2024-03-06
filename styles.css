@@ -3,6 +3,10 @@
   src: url(barlistaa.ttf);
 }
 
+@font-face {
+  font-family: fonthair;
+  src: url(Montserrat-Italic-VariableFont_wght.ttf);
+}
 html{
   scroll-behavior:smooth;
   
@@ -72,7 +76,7 @@ object-fit: cover;
   text-shadow: none;
   color: silver;
   font-size: 0.6em;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: fonthair;
 }
 
 .mobile{
@@ -90,13 +94,22 @@ object-fit: cover;
  flex-direction: column;
  align-items: center;
  justify-content: center;
- background-color: rgba(0, 0, 0, 0.9);
+ background-color: rgba(255, 255, 255, 1);
  padding-bottom: 10px;
  padding-top: 10px;
  
  
  transition: 0.5s;
 
+}
+.mobile button a{
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+.mobile button a:hover{
+  text-decoration: underline;
+  
+  
 }
 .mobile.open{
   
@@ -247,7 +260,7 @@ border: none;
 
   transition: 0.6s;
   transform: translateY(-5%);
-
+  background-color:rgba(234, 170, 107, 1);
  
   
   
@@ -314,7 +327,7 @@ border: none;
  
  
   }
-  
+ 
   
   
 }
