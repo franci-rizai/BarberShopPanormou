@@ -46,6 +46,7 @@ object-fit: cover;
   animation: shine 1.4s ease-in-out  infinite;
   font-size: 2.2em;
   text-align: center;
+  letter-spacing: 3px;
   color: #4f500f;
   
 
@@ -76,8 +77,6 @@ object-fit: cover;
 
 .mobile{
  position: absolute;
- 
-
  
 
  top: 4.4em;
@@ -117,7 +116,7 @@ body{
   flex-direction: column;
   
 
-  background-color: #161616;
+  background-color: rgba(255, 235, 205,0.5);
   margin:0px;
  
   position: relative;
@@ -143,7 +142,7 @@ body{
   position: absolute;
  width: 100%;
  height: 100%;
-  background: linear-gradient(to bottom,  rgba(22,22,22,0.2) 10%,rgba(26, 30, 36,1) 100%);
+  background: linear-gradient(to bottom,  rgba(255, 235, 205,0.1) 40%,rgba(255, 235, 205,0.3) 100%);
   z-index: 12;
 }
 
@@ -222,12 +221,12 @@ ul li{
   margin-top: 2px;
 }
 .thl-btn{
-box-shadow: 0px 1px 7px burlywood;
+
   color:white;
   cursor: pointer;
 background-color: transparent;
   
-  font-size: 22px;
+  font-size: 25px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-weight: 700;
   line-height: 2;
@@ -235,14 +234,17 @@ background-color: transparent;
   width: fit-content;
   transition: 0.6s;
   height: 70px;
- border:2px solid rgba(234, 170, 107, 0.8);;
-  background-color:rgba(234, 170, 107, 0.6);
- font-family: Inconsolata;
  
-  font-weight: normal;
+  background-color:rgba(234, 170, 107, 0.6);
+  font-family:sans-serif;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 5px;
+border: none;
+ font-weight: normal;
 }
 .thl-btn:hover{
-  background-color:transparent;
+
   transition: 0.6s;
   transform: translateY(-5%);
 

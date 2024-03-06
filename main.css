@@ -1,5 +1,6 @@
 main{
- background:linear-gradient(#1a1e24,#161616);
+  background-color: rgba(255, 235, 205,0.1);
+
 
 
   display: flex;
@@ -23,7 +24,7 @@ main{
   font-family: Avenir, sans-serif;
     font-size: 45px;
     font-weight: 900;
-    color: white;
+    color: rgb(9, 8, 8);
     line-height: 40px;
    
 }
@@ -43,6 +44,7 @@ main{
   min-height: 100svh;
   display: flex;
   flex-direction: column;
+  
  
  
   
@@ -61,7 +63,7 @@ h6{
  margin-top: auto;
  margin-right: 100px;
  
-  color:white;
+  color:rgb(7, 7, 7);
     font-family: Avenir, sans-serif;
     font-size: 20px;
     font-weight: 300;
@@ -107,7 +109,7 @@ main{
   font-family: Avenir, sans-serif;
     font-size: 45px;
     font-weight: 900;
-    color: white;
+    color: rgb(0, 0, 0);
     line-height: 40px;
     
     width: 90%;
@@ -126,10 +128,10 @@ justify-content: center;
   z-index: 15;
  margin-top: 0;
  margin-right: 0;
-  color:white;
+  color:rgb(0, 0, 0);
     font-family: Avenir, sans-serif;
     font-size: 25px;
-    font-weight: 300;
+    font-weight: 500;
     line-height: 33px;
     width: 100%;
     max-width: none;
