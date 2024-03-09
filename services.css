@@ -117,7 +117,7 @@ row-gap: 15em;
 .container .card {
 
   position: relative;
-  
+  max-width: 300px;
   height : 100px;
   background-color : #fff;
   margin : 65px 10px;
@@ -144,7 +144,7 @@ row-gap: 15em;
   height : 260px;
   aspect-ratio: 1/1;
   top : -60%;
- left: 10%;
+ 
   
   z-index : 1;
 }
@@ -154,7 +154,7 @@ row-gap: 15em;
   filter: brightness(0.4);
   
  position: relative;
-  max-width : 100%;
+  max-width :100%;
   border-radius : 15px;
 aspect-ratio: 1.1;
   transition: padding 0.3s;
