@@ -101,7 +101,7 @@ justify-content: space-around;
   }
   @keyframes shine {
     0%,100%{
-        text-shadow: -1px -1px 5px white;
+        text-shadow: -1px -1.2px 5px white;
     }
     50%{
         text-shadow: -1px -1px 10px white;
