@@ -3,6 +3,8 @@
   font-family:font2;
   src: url(DelaGothicOne-Regular.ttf);
 }
+
+
 .smooch-sans-hi {
   font-family: "Smooch Sans", sans-serif;
   font-optical-sizing: auto;
@@ -100,7 +102,7 @@ row-gap: 15em;
   font-style: italic;
   filter: drop-shadow(0px 0px 0px);
   transition: 0.2s;
-  font-family:fonthair ;
+
 }
 
 .container {
@@ -110,14 +112,15 @@ row-gap: 15em;
  margin-right: auto;
   background-color: rgba(255, 255, 255, 0.7);
  border-radius: 10px;
- font-family: fonthair;
+ 
 
 }
 
 .container .card {
 
   position: relative;
-  max-width: 300px;
+  
+  width: 300px;
   height : 100px;
   background-color : #fff;
   margin : 65px 10px;
@@ -163,12 +166,21 @@ aspect-ratio: 1.1;
  transition: 1s;
   
 }
-
+.content h3{
+  font-size: 2em;
+  letter-spacing: 8px;
+  font-style: italic;
+  font-weight: 100;
+  color: rgb(82, 82, 82);
+ 
+  
+}
 .container .card .content {
   transition: 0.2s;
   position : relative;
   top : -285px;
-  padding : 10px 15px;
+  
+  letter-spacing: 1px;
   color : #111;
   text-align : center;
   
