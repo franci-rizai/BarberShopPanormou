@@ -7,6 +7,79 @@
   font-family: fonthair;
   src: url(Montserrat-Italic-VariableFont_wght.ttf);
 }
+.start{
+
+  display: flex;
+  
+  
+  
+  
+}
+.start div:nth-child(1){
+ position: fixed;
+  background-color: rgb(34, 34, 34);
+
+ 
+  border-left: 10px solid #f4f680;;
+  left: 50%;
+ right: 0;
+  top:0;
+  bottom: 0;
+ 
+  
+  z-index: 250;
+  animation: starting2 5s ease-in-out 1;
+  animation-fill-mode: forwards;  
+  
+}
+.start div:nth-child(2){
+  position: fixed;
+  background-color: rgb(34, 34, 34);
+  opacity: 1;
+  top: 0;
+  border-right: 10px solid #f4f680;
+ left: 0;
+ right: 50%;
+  bottom: 0;
+ 
+  z-index: 250;
+  animation: starting 5s ease-in-out 1;
+  animation-fill-mode: forwards;  
+  
+}
+
+@keyframes starting {
+ 
+  50%{
+    right: 100%;
+  }
+  70%{
+    opacity: 0;
+  }
+  100%{
+   
+    right: 100%;
+    border: none;
+  }
+ 
+  
+}
+@keyframes starting2 {
+  50%{
+    left: 100%;
+  }
+  70%{
+    opacity: 0;
+  }
+  100%{
+    left:100%;
+    border: none;
+  }
+  
+}
+
+
+
 html{
   scroll-behavior:smooth;
   
@@ -94,19 +167,19 @@ object-fit: cover;
  
 }
 .slideleft{
-  animation: slideleft 1.5s ease-out;
+  animation: slideleft 2.5s ease-out;
 }
 .slidedown{
-  animation: slidedown 1.5s ease-out;
+  animation: slidedown 2.5s ease-out;
 }
 .slideright{
-  animation: slideright 1.5s ease-out;
+  animation: slideright 2.5s ease-out;
 }
 .slideup{
-  animation: slideup 1.5s ease-out;
+  animation: slideup 2.5s ease-out;
 }
 .slideupdelay{
-  animation: slideup 2s linear;
+  animation: slideup 3s linear;
 }
 
 
