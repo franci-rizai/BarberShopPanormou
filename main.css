@@ -29,9 +29,9 @@ main{
    
 }
 .epiphoto{
-
   max-width: 100%;
   height: auto;
+  aspect-ratio: 16/11;
   object-fit: cover;
  
 
